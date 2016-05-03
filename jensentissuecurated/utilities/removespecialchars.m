@@ -1,0 +1,34 @@
+function strout = removespecialchars(strin)
+
+strstripped = strrep(strin, '`', '');
+strstripped = strrep(strstripped, '~', '');
+strstripped = strrep(strstripped, '@', '');
+strstripped = strrep(strstripped, '#', '');
+strstripped = strrep(strstripped, '$', '');
+strstripped = strrep(strstripped, '%', '');
+strstripped = strrep(strstripped, '^', '');
+strstripped = strrep(strstripped, '&', '');
+strstripped = strrep(strstripped, '*', '');
+strstripped = strrep(strstripped, '(', '');
+strstripped = strrep(strstripped, ')', '');
+strstripped = strrep(strstripped, '_', '');
+strstripped = strrep(strstripped, '+', '');
+strstripped = strrep(strstripped, '-', '');
+strstripped = strrep(strstripped, '=', '');
+strstripped = strrep(strstripped, '{', '');
+strstripped = strrep(strstripped, '}', '');
+strstripped = strrep(strstripped, '|', '');
+strstripped = strrep(strstripped, '[', '');
+strstripped = strrep(strstripped, ']', '');
+strstripped = strrep(strstripped, '\', '');
+strstripped = strrep(strstripped, ':', '');
+strstripped = strrep(strstripped, '"', '');
+strstripped = strrep(strstripped, ';', '');
+strstripped = strrep(strstripped, '''', '');
+strstripped = strrep(strstripped, '<', '');
+strstripped = strrep(strstripped, '>', '');
+strstripped = strrep(strstripped, '?', '');
+strstripped = strrep(strstripped, ',', '');
+strstripped = strrep(strstripped, '.', '');
+strstripped = strrep(strstripped, '/', '');
+strout = strrep(strstripped, ' ', '');
